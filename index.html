@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a180504ca8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            
+            <nav>
+                <h1><span>S</span>elva <span>B</span>harathy</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1 class="header">Hi, I'm <span>Selva</span> <br>Bharathy From India</h1>
+            </div>
+        </div>
+    </div>
+<!---------------About------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.avif" alt="" width="" height="550">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="one">About Me</h1>
+                    <p>Results-oriented and highly motivated Software Trainer with a passion for empowering individuals through comprehensive software education. Seeking a challenging position where I can leverage my extensive knowledge coupled with my exceptional communication and instructional abilities, to cultivate a dynamic learning environment. Committed to fostering a culture of continuous learning, I aim to inspire and guide individuals in mastering software skills that drive innovation and enhance productivity within the ever-evolving tech landscape.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>FrontEnd Development</span><br>Html <br>Css , Javascript<br>ReactJs</li>
+                            <li><span>BackEnd Development</span><br>Python<br>Java<br>C++<br>Mysql</li>
+                            <li><span>Software Testing</span><br>Manual Testing<br>Selenium</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="experience">
+                        <ul>
+                            <li><span>Sep 2022 - Dec 2023</span><br>Software Trainer at FIIT Formacion pvt ltd</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="education">
+                        <ul>
+                            <li><span>2018 - 2022</span><br>Jaya Engineering College<br> B.E Computer Science Engineering<br><span>CGPA:</span>8.2</li>
+                            <li><span>2017 - 2018</span><br>F.E.S matriculation higher secondary School<br><span>Percentage:</span>74% at HSC</li>
+                            <li><span>2016 - 2017</span><br>F.E.S matriculation higher secondary School<br><span>Percentage:</span>84% at SSLC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------------Services--------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="one">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web development: creating and maintaining websites or web apps, covering design, front-end (UI), back-end (server-side), and database tasks. Languages include HTML, CSS, JavaScript, considerations: responsive design.</p>
+                
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>BackEnd Develope</h2>
+                <p>Backend development manages server-side logic, databases, and overall functionality in web development. It ensures smooth data processing and business logic, playing a vital role in delivering a seamless user experience.</p>
+                
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>FrontEnd Design</h2>
+                <p>Frontend development involves designing and implementing the visual elements of a website or web app using HTML, CSS, and JavaScript. Developers focus on creating a user-friendly and engaging experience.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------Portfolio---------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="one">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+               <img src="images/todo.webp" height="300"> 
+               <div class="layer">
+                <h3>ToDo List Application</h3>
+                <p>A to-do list application facilitates task management by allowing users to create, organize, and track their activities, often employing a combination of frontend technologies
+                    like Html,Css and backend technologies</p>
+                    <a href="https://github.com/selvabharathy711/TODO-List"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/currency1.webp" height="300"> 
+                <div class="layer">
+                <h3>Currency Convertor</h3>
+                <p>A currency converter is a user-friendly tool designed for the rapid and efficient calculation of the relative value between two different currencies, utilizing the most recent exchange rates available. </p>
+                <a href="https://github.com/selvabharathy711/Currency-Convertor"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+            </div>
+             <div class="work">
+                <img src="images/weather.jpg" height="300">
+                <div class="layer">
+                <h3>Weather Forcast</h3>
+                <p>A weather forecasting web app delivers real-time and future meteorological information, offering current conditions, short-term and long-term forecasts, interactive maps, location-based services. </p>
+                <a href="https://github.com/selvabharathy711/Weather-Forcasting"><i class="fas fa-external-link-alt"></i></a>
+            </div>   
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------Contact------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="one">Contact Me</h1>
+                <p><i class="fa fa-paper-plane"></i> selvabharathy231@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 8056222027</p>
+                <div class="social-icons">
+                    <a href="https://github.com/selvabharathy711"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://www.linkedin.com/in/selvabharathy231/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Selva474180"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <a href="images/New Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email"name="email"placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit"class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+<p>Copyright &copy; Done By Selva Bharathy</p>
+</div></div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyiiLjyHmrrFpl7C30Az-eH7UlVojBVVUpKF2rY-tgr_stuOR7qGf4O6eWCuI_NX_90LQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
